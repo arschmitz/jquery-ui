@@ -10,7 +10,7 @@
 	<script src="../../ui/jquery.ui.button.js"></script>
 	<script>
 	$(function() {
-		$( "button:first" ).button({
+		$( ".widget button:first" ).button({
 			icon: "ui-icon-locked",
 			text: false
 		}).next().button({
@@ -31,7 +31,7 @@
 			iconPosition: "left",
 			text: false
 		});
-		$( "input:first" ).button({
+		$( ".widget input:first" ).button({
 			icon: "ui-icon-locked",
 			text: false
 		}).next().button({
@@ -59,27 +59,23 @@
 <div class="demo-description">
 	<p>Some buttons with various combinations of text and icons.</p>
 </div>
-<button>Button with icon only</button>
-<button>Button with icon on the left</button>
-<button>Button with icon on the right</button>
-<button>Button with icon on the top</button>
-<button>Button with icon on the bottom</buttom>
-<button></button>
-<button>Button with icon position and no label</button>
-<div class="demo-description">
-	<p>Some inputs with various combinations of text and icons.</p>
-</div>
-<input type="submit" value="Label with icon only" />
-<input type="submit" value="Label with icon on the left" />
-<input type="submit" value="Label with icon on the right" />
-<input type="submit" value="Label with icon on the top" />
-<input type="submit" value="Label with icon on the bottom" />
-<input type="submit"/>
-<input type="submit" value="Label with icon position and no label" />
-
-
-<div class="demo-description">
-<p>Some buttons with various combinations of text and icons.</p>
+<div class="widget">
+	<h2>Buttons</h2>
+	<button>Button with icon only</button>
+	<button>Button with icon on the left</button>
+	<button>Button with icon on the right</button>
+	<button>Button with icon on the top</button>
+	<button>Button with icon on the bottom</buttom>
+	<button></button>
+	<button>Button with icon position and no label</button>
+	<h2>Inputs</h2>
+	<input type="submit" value="Label with icon only" />
+	<input type="submit" value="Label with icon on the left" />
+	<input type="submit" value="Label with icon on the right" />
+	<input type="submit" value="Label with icon on the top" />
+	<input type="submit" value="Label with icon on the bottom" />
+	<input type="submit"/>
+	<input type="submit" value="Label with icon position and no label" />
 </div>
 </body>
 </html>
