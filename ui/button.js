@@ -117,19 +117,8 @@ $.widget( "ui.button", {
 				this.element.html( this.options.label );
 			}
 		}
-
 		if ( this.options.icon ) {
 			this._updateIcon( this.options.icon )._updateTooltip();
-		}
-
-		if ( this.element.is( "a" ) ) {
-			this._on({
-				"keyup": function( event ) {
-					if ( event.keyCode === $.ui.keyCode.SPACE ) {
-						this.element[0].click();
-					}
-				}
-			});
 		}
 	},
 
