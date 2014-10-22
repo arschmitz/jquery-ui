@@ -5,6 +5,11 @@ TestHelpers.commonWidgetTests( "button", {
 		label: null,
 		icon: null,
 		iconPosition: "beginning",
+		text: true,
+		icons: {
+			primary: null,
+			secondary: null
+		},
 		classes: {
 			"ui-button": "ui-corner-all"
 		},
