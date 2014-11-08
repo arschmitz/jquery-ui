@@ -195,7 +195,9 @@ TestHelpers.commonWidgetTests = function( widget, settings ) {
 	TestHelpers.testJshint( widget );
 	testWidgetDefaults( widget, settings.defaults );
 	testWidgetOverrides( widget );
-	testBasicUsage( widget );
+	if ( !settings.noDefaultElement ) {
+		testBasicUsage( widget );
+	}
 	test( "version", function() {
 		expect( 1 );
 		ok( "version" in $.ui[ widget ].prototype, "version property exists" );
