@@ -149,25 +149,6 @@ grunt.initConfig({
 		dist: "<%= pkg.name %>-<%= pkg.version %>"
 	},
 	compare_size: compareFiles,
-	concat: {
-		i18n: {
-			options: {
-				banner: createBanner( allI18nFiles )
-			},
-			src: allI18nFiles,
-			dest: "dist/i18n/jquery-ui-i18n.js"
-		},
-		css: {
-			options: {
-				banner: createBanner( cssFiles ),
-				stripBanners: {
-					block: true
-				}
-			},
-			src: cssFiles,
-			dest: "dist/jquery-ui.css"
-		}
-	},
 	requirejs: {
 		js: {
 			options: {
